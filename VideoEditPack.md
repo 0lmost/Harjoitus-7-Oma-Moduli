@@ -1,6 +1,6 @@
 **Olmo Kosunen GPL 2.0**
 
-#VideoEditPack
+# VideoEditPack
 
 Lopputulos: SS softat auki ja YT video
 
