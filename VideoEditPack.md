@@ -1,10 +1,10 @@
 **Olmo Kosunen GPL 2.0**
 
 # VideoEditPack
-![imaghttps://www.youtube.com/watch?v=rWjIpZxOqks&ab_channel=Based%26Kinoe]
+![image](https://user-images.githubusercontent.com/60943507/168652154-854af248-07e2-4f1e-9176-a723c4498be2.png)
 
-(https://user-images.githubusercontent.com/60943507/168651938-08849b7d-9baa-414c-b638-b68f6794afba.png
 
+https://www.youtube.com/watch?v=rWjIpZxOqks&ab_channel=Based%26Kino
 
 
 Lopputulos: SS softat auki ja YT video
