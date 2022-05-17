@@ -97,7 +97,7 @@ Ja sain jälleen onnistuneen tulosteen
 ![image](https://user-images.githubusercontent.com/60943507/168885053-39b5e3a5-119e-4aa0-9222-6d45494de200.png)
 
     
-Kaikki näytti vielä hyvältä ja kävin sovelluksissa katsomassa,että asetukset olivat tulleet voimaan.
+Kaikki näytti vielä hyvältä ja kävin sovelluksissa katsomassa, että asetukset olivat tulleet voimaan.
 
 Tähän asti olin ajanut tilat lokaalisti ja kokeillut myös toiminnan vanhalla samalla koneella olevallani minionilla ja sekin toimi.
 Halusin kuitenkin tehdä moduulin testausta varten vielä täysin uuden erillisen virtuaalikoneen, joten asensin virtualboxilla itselleni uuden Debian 11
