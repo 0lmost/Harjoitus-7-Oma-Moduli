@@ -21,7 +21,9 @@ Moduulin avulla voisi vaikka editoida yllä olevan lyhytelokuvan, koska sen teko
 
 Mitä moduulilla voi siis tehdä? 
 
-**Editoida ja katsoa videoita, valmiiksi konffatut lempiasetukset* *Asetukset eivät toimi vielä*
+**Editoida ja katsoa videoita, valmiiksi konffatut lempiasetukset sovelluksiin* 
+
+*Asetukset eivät toimi vielä*
 
 ## Projekti ja sen käyttöönotto:
 
