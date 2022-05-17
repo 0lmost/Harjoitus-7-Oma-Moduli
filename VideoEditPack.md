@@ -24,7 +24,7 @@ Mitä moduulilla voi siis tehdä? : Editoida ja katsoa videoita, valmiiksi konff
 ## Projekti ja sen käyttöönotto:
 
 Päätin luoda moduulin, joka sisältää hyväksi todettuja videoeditointiin ja videoon liittyiä softia linuxille (Debian 11). 
-Tarkoituksena on myös konffata softiin omat lempiasetukset kuten laittaa projektien fps olemaan ja resoluution 
+Tarkoituksena on myös konffata softiin omat lempiasetukset kuten laittaa projektien fps ja resoluutio kamerani asetuksiin sopiviksi.
 
 Softat, jotka asennan ja konffaan: Blender, Kdenlive, VLC. 
 
