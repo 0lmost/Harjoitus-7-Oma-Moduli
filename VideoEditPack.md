@@ -53,12 +53,14 @@ Moduuli näyttää siis toimivan tässä vaiheessa, toki olin jo asentanut softa
 
 Seuraavana vaiheena olin laittanut tavoitteeksi vaihtaa sovelluksiin lempiasetukseni, joita käytän kun lähden työstämään videoprojektia.
 Asetukset olivat kdenliveen: 
-*Projetkin aikajanan asetukset defaulttina: Resoluutio 1080p ja fps 23.98 (Samat kuin kamerani asetukset yleensä)
-*Valmiin työn export asetukset: Resoluutio 1080p ja fps 23.98 ja tiedostoformaatti mp4 (Asetukset lyhytelokuvilleni)
+
+* Projetkin aikajanan asetukset defaulttina: Resoluutio 1080p ja fps 23.98 (Samat kuin kamerani asetukset yleensä)
+* Valmiin työn export asetukset: Resoluutio 1080p ja fps 23.98 ja tiedostoformaatti mp4 (Asetukset lyhytelokuvilleni)
 
 Asetukset vlc:
-*Skip no frames
-*Audio filter: Volume Normalizer
+
+* Skip no frames
+* Audio filter: Volume Normalizer
 
 Asetukset blender:
 
