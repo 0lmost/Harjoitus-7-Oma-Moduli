@@ -12,24 +12,24 @@ Lopputulos: SS softat auki ja YT video
 
 Mitä voi tehdä? : Editoida ja katsoa videoita , valmiiksi konffatut lempiasetukset
 
-Projekti ja sen käyttöönotto:
+## Projekti ja sen käyttöönotto:
 
 Päätin luoda moduulin, joka sisältää hyväksi todettuja videoeditointiin ja videoon liittyiä softia linuxille (Debian 11). Tarkoituksena on myös konffata softiin omat lempiasetukset kuten laittaa projektien fps olemaan ja resoluution 
 
 Aloitin luomalla masterille kansiot:
 
-  /srv/salt/blender
-  /srv/salt/kdenlive
-  /srv/salt/vlc
+    /srv/salt/blender
+    /srv/salt/kdenlive
+    /srv/salt/vlc
  
 Jokaiseen kansioon tein oman init.sls tiedoston ,jonka perusrakenne on:
 
-  vlc:
-  pkg.installed
+    vlc:
+      pkg.installed
 
-###/home/olmo/.config/vlc/vlcrc:
-###  file.managed:
-##    - source: salt://vlc/vlcrc
+    ###/home/olmo/.config/vlc/vlcrc:
+    ###  file.managed:
+    ##    - source: salt://vlc/vlcrc
 
 
   
