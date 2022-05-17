@@ -162,3 +162,19 @@ Yritin etsiä oliko konffitiedostoja muissa sijanneissa ja yritin siirtää niit
 # Lopputulos ja projektin jatkaminen
 
 Mooduliprojekti oli osaltani pieni pettymys, koska en saanut moduulista vielä sellaista kuin haluaisin, mutta sen tekeminen oli erittäin mielenkiintoista ja innostus laittaa ja korjata moduuli täysin toimivaksi kasvoi. Jatkan siis moduulin työstämistä vielä kurssin jälkeenkin, joten jos kiinnostuit moduulista niin seuraa sen etenemistä täältä GitHubista!
+
+### Lähteet: 
+* https://docs.blender.org/manual/en/2.79/getting_started/installing/configuration/directories.html
+* https://www.videolan.org/support/faq.html
+* https://community.kde.org/Kdenlive/Configuration
+* https://terokarvinen.com/2021/configuration-management-systems-2022-spring/
+* https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
+* https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html
+
+<!-- wp:paragraph -->
+<p>Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. <a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Pohjana Tero Karvisen Palvelinten Hallinta kurssi, Kevät 2022 <a href="https://terokarvinen.com/2021/configuration-management-systems-2022-spring/">https://terokarvinen.com/2021/configuration-management-systems-2022-spring/</a></p>
+<!-- /wp:paragraph -->
