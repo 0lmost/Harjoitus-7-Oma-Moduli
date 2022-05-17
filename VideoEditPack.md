@@ -1,8 +1,9 @@
 **Olmo Kosunen GPL 2.0**
+
 **Alla oleva raportointi on suomeksi, mutta se käännetään myöhemmin myös englanniksi, jos moduli etenee "tuotantoon" asti**
 **English version of this report coming soon**
 
-# VideoEditPack - Alpha state
+# VideoEditPack - Beta state
 
 ![image](https://user-images.githubusercontent.com/60943507/168652154-854af248-07e2-4f1e-9176-a723c4498be2.png)
 
@@ -11,13 +12,16 @@ Lopputulos eli ohjelmien asennus onnistunut moduulin avulla
                                                                                                 
 ![image](https://user-images.githubusercontent.com/60943507/168652555-17a99538-08c6-403e-914a-92b55b75d220.png)
 
+https://www.youtube.com/watch?v=rWjIpZxOqks&t=4s&ab_channel=Based%26Kino 
+
 Moduulin avulla voisi, vaikka editoida yllä olevan lyhytelokuvan, koska sen tekoon käytettiin moduulissa olevia sovelluksia!
 
 Mitä moduulilla voi siis tehdä? : Editoida ja katsoa videoita, valmiiksi konffatut lempiasetukset* *Ei toimi vielä*
 
 ## Projekti ja sen käyttöönotto:
 
-Päätin luoda moduulin, joka sisältää hyväksi todettuja videoeditointiin ja videoon liittyiä softia linuxille (Debian 11). Tarkoituksena on myös konffata softiin omat lempiasetukset kuten laittaa projektien fps olemaan ja resoluution 
+Päätin luoda moduulin, joka sisältää hyväksi todettuja videoeditointiin ja videoon liittyiä softia linuxille (Debian 11). 
+Tarkoituksena on myös konffata softiin omat lempiasetukset kuten laittaa projektien fps olemaan ja resoluution 
 
 Aloitin luomalla masterille kansiot:
 
