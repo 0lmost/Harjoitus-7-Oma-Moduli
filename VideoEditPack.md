@@ -47,6 +47,20 @@ Sain onnistuneen tulosteen:
 
 ![image](https://user-images.githubusercontent.com/60943507/168825371-4943525a-346e-443b-9d1b-80430d136f3c.png)
 
+Moduuli näyttää siis toimivan tässä vaiheessa, toki olin jo asentanut softat master-koneelleni aikaisemmin. Tila on kuitenkin todettu idempotentiksi.
+
+## Sovellusten asetusten konfigurointi
+
+Seuraavana vaiheena olin laittanut tavoitteeksi vaihtaa sovelluksiin lempiasetukseni, joita käytän kun lähden työstämään videoprojektia.
+Asetukset olivat kdenliveen: 
+*Projetkin aikajanan asetukset defaulttina: Resoluutio 1080p ja fps 23.98 (Samat kuin kamerani asetukset yleensä)
+*Valmiin työn export asetukset: Resoluutio 1080p ja fps 23.98 ja tiedostoformaatti mp4 (Asetukset lyhytelokuvilleni)
+
+Asetukset vlc:
+*Skip no frames
+*Audio filter: Volume Normalizer
+
+Asetukset blender:
 
     
   
