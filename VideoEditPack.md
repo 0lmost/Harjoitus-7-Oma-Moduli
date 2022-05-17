@@ -45,6 +45,7 @@ Ajoin tilan testinä lokaalisti komennolla:
     
 Sain onnistuneen tulosteen:
 
+![image](https://user-images.githubusercontent.com/60943507/168825371-4943525a-346e-443b-9d1b-80430d136f3c.png)
 
 
     
