@@ -161,6 +161,10 @@ Yritin etsiä oliko konffitiedostoja muissa sijanneissa ja yritin siirtää niit
 
 # Lopputulos ja projektin jatkaminen
 
+**VideoEditPack moduuli toimii pakettien asennusten osalta, joten se on projektin toimiva komponentti.**
+
+**Sovellusten asetusten konfigurointi ei toimi vielä...**
+
 Mooduliprojekti oli osaltani pieni pettymys, koska en saanut moduulista vielä sellaista kuin haluaisin, mutta sen tekeminen oli erittäin mielenkiintoista ja innostus laittaa ja korjata moduuli täysin toimivaksi kasvoi. Jatkan siis moduulin työstämistä vielä kurssin jälkeenkin, joten jos kiinnostuit moduulista niin seuraa sen etenemistä täältä GitHubista!
 
 ### Lähteet: 
