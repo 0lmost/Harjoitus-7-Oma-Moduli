@@ -4,7 +4,7 @@
 
 **English version of this report coming soon**
 
-**Tästä GitHub reposta löytyy, kaikki tiedotot joita moduuli käyttää**
+**Tästä GitHub reposta löytyy kaikki tiedostot joita moduuli käyttää**
 
 # VideoEditPack - Beta state v.1.0
 
