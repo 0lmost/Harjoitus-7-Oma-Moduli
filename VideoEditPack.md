@@ -1,14 +1,16 @@
-**Olmo Kosunen GPL 2.0**
+**By Olmo Kosunen GPL 2.0**
 
 **Alla oleva raportointi on suomeksi, mutta se käännetään myöhemmin myös englanniksi, jos moduli etenee "tuotantoon" asti**
 
 **English version of this report coming soon**
 
-# VideoEditPack - Beta state
+**Tästä GitHub reposta löytyy, kaikki tiedotot joita moduuli käyttää**
+
+# VideoEditPack - Beta state v.1.0
 
 ![image](https://user-images.githubusercontent.com/60943507/168652154-854af248-07e2-4f1e-9176-a723c4498be2.png)
 
-Lopputulos eli ohjelmien asennus onnistunut moduulin avulla
+**Lopputulos eli ohjelmien asennus onnistunut moduulin avulla**
 
                                                                                                 
 ![image](https://user-images.githubusercontent.com/60943507/168652555-17a99538-08c6-403e-914a-92b55b75d220.png)
@@ -24,22 +26,27 @@ Mitä moduulilla voi siis tehdä? : Editoida ja katsoa videoita, valmiiksi konff
 Päätin luoda moduulin, joka sisältää hyväksi todettuja videoeditointiin ja videoon liittyiä softia linuxille (Debian 11). 
 Tarkoituksena on myös konffata softiin omat lempiasetukset kuten laittaa projektien fps olemaan ja resoluution 
 
+Softat, jotka asennan ja konffaan: Blender, Kdenlive, VLC. 
+
+Moduuliin oi tarkoitus tulla mukaan myös DaVinci Resolve, mutta sillä ei ollut virallista tukea Debianille joten jätin sen säätämisen tulevaisuuteen samoin Lightworksin jätin pois ja lisään sen jos kerkeän.
+
 Aloitin luomalla masterille kansiot:
 
+    #komento sudo mkdir
     /srv/salt/blender
     /srv/salt/kdenlive
     /srv/salt/vlc
  
-Jokaiseen kansioon tein oman init.sls tiedoston ,jonka perusrakenne on:
+Jokaiseen kansioon tein oman init.sls tiedoston, jonka perusrakenne on:
 
     vlc:
       pkg.installed
 
-    ###/home/olmo/.config/vlc/vlcrc:
-    ###  file.managed:
-    ##    - source: salt://vlc/vlcrc
+    /home/olmo/.config/vlc/vlcrc:
+      file.managed:
+        - source: salt://vlc/vlcrc
 
-Välissä tein testin ja laitoin kaikki luomani salt-moduulit yhteen top.sls tiedostoon, joka laitetaan kansiioon /srv/salt/
+Välissä tein testin ja laitoin kaikki luomani salt-tilat yhteen top.sls tiedostoon, joka laitetaan kansiioon /srv/salt/
 
     base:
       '*':
@@ -60,12 +67,13 @@ Moduuli näyttää siis toimivan tässä vaiheessa, toki olin jo asentanut softa
 ## Sovellusten asetusten konfigurointi
 
 Seuraavana vaiheena olin laittanut tavoitteeksi vaihtaa sovelluksiin lempiasetukseni, joita käytän kun lähden työstämään videoprojektia.
-Asetukset olivat kdenliveen: 
+
+Asetukset olivat Kdenliveen: 
 
 * Projetkin aikajanan asetukset defaulttina: Resoluutio 1080p ja fps 23.98 (Samat kuin kamerani asetukset yleensä)
 * Valmiin työn export asetukset: Resoluutio 1080p ja fps 23.98 ja tiedostoformaatti mp4 (Asetukset lyhytelokuvilleni)
 
-Asetukset vlc:
+Asetukset VLC:
 
 * Skip no frames
 * Audio filter: Volume Normalizer
@@ -75,9 +83,14 @@ Asetukset blender:
 
 Aloitin Googletmalla, missä kyseisten sovellusten config -tiedostot olivat ja tietojen mukaan ne olivat kansioissa:
 
-* VLC: $(HOME)/.config/vlc/vlcrc
+* VLC: ~/.config/vlc/vlcrc
 * Kdenlive: ~/.config/kdenliverc : contains the general settings of the application
-* Blender: $HOME/.config/blender/2.79/
+* Blender: ~/.config/blender/2.79/
+
+Lähteet: 
+* https://docs.blender.org/manual/en/2.79/getting_started/installing/configuration/directories.html
+* https://www.videolan.org/support/faq.html
+* https://community.kde.org/Kdenlive/Configuration
 
 Seurasin kurssilla tekemieni harjoitusten ja ohjeiden mukaisesti ja 
 laitoin jokaiseen init.sls tiedostoon file.managed periaatteen mukaisesti:
@@ -107,8 +120,10 @@ Ja sain jälleen onnistuneen tulosteen
 Kaikki näytti vielä hyvältä ja kävin sovelluksissa katsomassa, että asetukset olivat tulleet voimaan.
 
 Tähän asti olin ajanut tilat lokaalisti ja kokeillut myös toiminnan vanhalla samalla koneella olevallani minionilla ja sekin toimi.
+
 Halusin kuitenkin tehdä moduulin testausta varten vielä täysin uuden erillisen virtuaalikoneen, joten asensin virtualboxilla itselleni uuden Debian 11
 virtuaalikoneen, josta tein uuden minionin asentamalla salt-minioin.
+
 Sain masterillani yhteyden tähän uuteen virtuaalikoneeseen ja minioniin nimeltä *ModuliMinion* ja lähdin suorittamaan isoa testiä...
 
     sudo salt 'ModuliMinion' state.highstate
@@ -128,7 +143,7 @@ Mietin hetken ja tajusin ongelman johtuvan siitä kuten tulosteen kommenteissa k
 
 Yritin Googlata asiaa:
 -Saltin omat sivut eivät antaneet selvää ratkaisua https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html
--https://www.reddit.com/r/saltstack/comments/3dgelu/filemanaged_a_whole_directory/ 
+-En löytänyt lisää tietoa tai osannut Googlata oikealla kysymyksellä.
 
 
 Yritin etsiä oliko konffitiedostoja muissa sijanneissa ja yritin siirtää niitä eri sijaintiin:
