@@ -17,9 +17,11 @@
 
 https://www.youtube.com/watch?v=rWjIpZxOqks&t=4s&ab_channel=Based%26Kino 
 
-Moduulin avulla voisi, vaikka editoida yllä olevan lyhytelokuvan, koska sen tekoon käytettiin moduulissa olevia sovelluksia!
+Moduulin avulla voisi vaikka editoida yllä olevan lyhytelokuvan, koska sen tekoon käytettiin moduulissa olevia sovelluksia!
 
-Mitä moduulilla voi siis tehdä? : Editoida ja katsoa videoita, valmiiksi konffatut lempiasetukset* *Ei toimi vielä*
+Mitä moduulilla voi siis tehdä? 
+
+**Editoida ja katsoa videoita, valmiiksi konffatut lempiasetukset* *Asetukset eivät toimi vielä*
 
 ## Projekti ja sen käyttöönotto:
 
