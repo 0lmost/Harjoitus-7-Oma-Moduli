@@ -34,16 +34,23 @@ Softat, jotka asennan ja konffaan: Blender, Kdenlive, VLC.
 
 Moduuliin oli tarkoitus tulla mukaan myös DaVinci Resolve, mutta sillä ei ollut virallista tukea Debianille, joten jätin sen säätämisen tulevaisuuteen samoin Lightworksin jätin pois ja lisään sen jos kerkeän.
 
+Ensiksi komennot:
+
+    $ sudo apt-get update
+    $ sudo apt-get upgrade
+
 Aloitin luomalla masterille kansiot:
 
-    #komento: sudo mkdir
+    #komento: $ sudo mkdir
+   
     /srv/salt/blender
     /srv/salt/kdenlive
     /srv/salt/vlc
  
 Jokaiseen kansioon tein oman init.sls tiedoston (käyttäen tekstieditori microa), jonka perusrakenne on:
     
-    # komento: micro init.sls
+    # komento: $ micro init.sls
+   
     vlc:
       pkg.installed
 
@@ -53,6 +60,8 @@ Jokaiseen kansioon tein oman init.sls tiedoston (käyttäen tekstieditori microa
 
 Välissä tein testin ja laitoin kaikki luomani salt-tilat yhteen top.sls tiedostoon, joka laitetaan kansiioon /srv/salt/
 
+    # komento: $ micro top.sls
+    
     base:
       '*':
         - blender
@@ -61,7 +70,7 @@ Välissä tein testin ja laitoin kaikki luomani salt-tilat yhteen top.sls tiedos
        
 Ajoin tilan testinä lokaalisti komennolla:
     
-    sudo salt-call --local state.highstate
+    $ sudo salt-call --local state.highstate
     
 Sain onnistuneen tulosteen:
 
@@ -101,11 +110,13 @@ Seurasin kurssilla tekemieni harjoitusten ja ohjeiden mukaisesti ja
 laitoin jokaiseen init.sls tiedostoon file.managed periaatteen mukaisesti:
 
     # Kdenlive
+    
     /home/olmo/.config/kdenliverc:
       file.managed:
         - source: salt://kdenlive/kdenliverc
     
     # VLC
+    
     /home/olmo/.config/vlc/vlcrc:
       file.managed:
         - source: salt://vlc/vlcrc
@@ -113,7 +124,7 @@ laitoin jokaiseen init.sls tiedostoon file.managed periaatteen mukaisesti:
 
 Ajoin tilan testinä lokaalisti komennolla:
     
-    sudo salt-call --local state.highstate 
+    $ sudo salt-call --local state.highstate 
 
 Ja sain jälleen onnistuneen tulosteen
 
@@ -127,11 +138,33 @@ Kaikki näytti vielä hyvältä ja kävin sovelluksissa katsomassa, että asetuk
 Tähän asti olin ajanut tilat lokaalisti ja kokeillut myös toiminnan vanhalla samalla koneella olevallani minionilla ja sekin toimi.
 
 Halusin kuitenkin tehdä moduulin testausta varten vielä täysin uuden erillisen virtuaalikoneen, joten asensin virtualboxilla itselleni uuden Debian 11
-virtuaalikoneen, josta tein uuden minionin asentamalla salt-minioin.
+virtuaalikoneen, josta tein uuden minionin asentamalla salt-minioin näitten ohjeiden mukaan: https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
+
+    #komennot
+    
+    $ sudo apt-get update
+    $ sudo apt-get -y install salt-minion
+    
+    $ sudoedit /etc/salt/minion
+    master: masterin ip osoite 
+    id: ModuliMinion
+    
+    $ sudo systemctl restart salt-minion.service
+     
+    
+    #Masterille hyväksymään minionin avain:
+    
+    master$ sudo salt-key -A
+    Unaccepted Keys:
+    ModuliMinion
+    Proceed? [n/Y]
+    Key for minion ModuliMinion accepted.
+    
+    
 
 Sain masterillani yhteyden tähän uuteen virtuaalikoneeseen ja minioniin nimeltä *ModuliMinion* ja lähdin suorittamaan isoa testiä...
 
-    sudo salt 'ModuliMinion' state.highstate
+    $ sudo salt 'ModuliMinion' state.highstate
     
  Sain tulosteen:
  
