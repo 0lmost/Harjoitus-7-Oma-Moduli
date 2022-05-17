@@ -175,6 +175,30 @@ Mooduliprojekti oli osaltani pieni pettymys, koska en saanut moduulista vielä s
 * https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
 * https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html
 
+Laitteen/alustan tiedot, jolla tehtävä suoritettiin:
+
+Salt-Master:
+
+* Oracle VirtualBox Version 6.1.32 r149290 (Qt5.6.2)
+* Debian 11.3
+* 6000 MB RAM
+* 60 GB Levytilaa
+
+Salt-Minion:
+
+* Oracle VirtualBox Version 6.1.32 r149290 (Qt5.6.2)
+* Debian 11.3
+* 6000 MB RAM
+* 40 GB Levytilaa
+
+Sekä:
+
+* Windows 10 64-bit
+* i7-7700HQ
+* GTX-1060 6GB
+* 1 TB SSD
+* 16 GB RAM
+
 <!-- wp:paragraph -->
 <p>Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. <a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></p>
 <!-- /wp:paragraph -->
