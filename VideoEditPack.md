@@ -28,7 +28,7 @@ Tarkoituksena on myös konffata softiin omat lempiasetukset kuten laittaa projek
 
 Softat, jotka asennan ja konffaan: Blender, Kdenlive, VLC. 
 
-Moduuliin oi tarkoitus tulla mukaan myös DaVinci Resolve, mutta sillä ei ollut virallista tukea Debianille joten jätin sen säätämisen tulevaisuuteen samoin Lightworksin jätin pois ja lisään sen jos kerkeän.
+Moduuliin oli tarkoitus tulla mukaan myös DaVinci Resolve, mutta sillä ei ollut virallista tukea Debianille, joten jätin sen säätämisen tulevaisuuteen samoin Lightworksin jätin pois ja lisään sen jos kerkeän.
 
 Aloitin luomalla masterille kansiot:
 
@@ -142,12 +142,16 @@ mutta file.managed tilassa mainittujen konffitiedostojen polkujen kanssa ongelma
 Mietin hetken ja tajusin ongelman johtuvan siitä kuten tulosteen kommenteissa kerrotaan: *Parent directory not present* eli tietenkään uudella minionilla ei voi olla kotihakemistoa nimeltä /home/olmo/... eli sitä mikä on masterillani.
 
 Yritin Googlata asiaa:
+
 -Saltin omat sivut eivät antaneet selvää ratkaisua https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html
+
 -En löytänyt lisää tietoa tai osannut Googlata oikealla kysymyksellä.
 
 
 Yritin etsiä oliko konffitiedostoja muissa sijanneissa ja yritin siirtää niitä eri sijaintiin:
+
 -En löytänyt muista sijanneista sovelluksiin liittyviä konffitiedostoja
+
 -Siirsin konffitiedostot eri sijaintiin /etc/share ja muokkasin init.sls tiedostot ja sain onnistuneen tulosteen, mutta sovellukset eivät ilmeisesti saaneet otettua tietoja sieltä, koska halumiani muutoksia ei tullut.
 
 # Lopputulos ja projektin jatkaminen
