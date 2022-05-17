@@ -1,17 +1,19 @@
 **Olmo Kosunen GPL 2.0**
+**Alla oleva raportointi on suomeksi, mutta se käännetään myöhemmin myös englanniksi, jos moduli etenee "tuotantoon" asti**
+**English version of this report coming soon**
 
-# VideoEditPack
+# VideoEditPack - Alpha state
+
 ![image](https://user-images.githubusercontent.com/60943507/168652154-854af248-07e2-4f1e-9176-a723c4498be2.png)
 
- [![Watch the video](https://img.youtube.com/vi/rWjIpZxOqks/maxresdefault.jpg)](https://youtu.be/rWjIpZxOqks)                                                                                                 
+Lopputulos eli ohjelmien asennus onnistunut moduulin avulla
 
+                                                                                                
 ![image](https://user-images.githubusercontent.com/60943507/168652555-17a99538-08c6-403e-914a-92b55b75d220.png)
 
+Moduulin avulla voisi, vaikka editoida yllä olevan lyhytelokuvan, koska sen tekoon käytettiin moduulissa olevia sovelluksia!
 
-
-Lopputulos: SS softat auki ja YT video
-
-Mitä voi tehdä? : Editoida ja katsoa videoita , valmiiksi konffatut lempiasetukset
+Mitä moduulilla voi siis tehdä? : Editoida ja katsoa videoita, valmiiksi konffatut lempiasetukset* *Ei toimi vielä*
 
 ## Projekti ja sen käyttöönotto:
 
@@ -106,9 +108,28 @@ Sain masterillani yhteyden tähän uuteen virtuaalikoneeseen ja minioniin nimelt
 
     sudo salt 'ModuliMinion' state.highstate
     
-   
-   
+ Sain tulosteen:
+ 
+ ![image](https://user-images.githubusercontent.com/60943507/168888882-b1854aa8-0da2-4c14-b4f4-0fd69ee36a9f.png)
   
+  ![image](https://user-images.githubusercontent.com/60943507/168888924-5fb4977b-949d-4a0e-8fe5-3bf03c1505fa.png)
+
+Kuten näkyy itse sovelluspakettien asentaminen onnistuu (kuvissa toinen kerta kun ajoin moduulin, joten siksi paketit jo asennettu),
+mutta file.managed tilassa mainittujen konffitiedostojen polkujen kanssa ongelmat sitten ilmenivät. 
+
+## Ongelman selvittäminen
+
+Mietin hetken ja tajusin ongelman johtuvan siitä kuten tulosteen kommenteissa kerrotaan: *Parent directory not present* eli tietenkään uudella minionilla ei voi olla kotihakemistoa nimeltä /home/olmo/... eli sitä mikä on masterillani.
+
+Yritin Googlata asiaa:
+-Saltin omat sivut eivät antaneet selvää ratkaisua https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html
+-https://www.reddit.com/r/saltstack/comments/3dgelu/filemanaged_a_whole_directory/ 
 
 
+Yritin etsiä oliko konffitiedostoja muissa sijanneissa ja yritin siirtää niitä eri sijaintiin:
+-En löytänyt muista sijanneista sovelluksiin liittyviä konffitiedostoja
+-Siirsin konffitiedostot eri sijaintiin /etc/share ja muokkasin init.sls tiedostot ja sain onnistuneen tulosteen, mutta sovellukset eivät ilmeisesti saaneet otettua tietoja sieltä, koska halumiani muutoksia ei tullut.
 
+# Lopputulos ja projektin jatkaminen
+
+Mooduliprojekti oli osaltani pieni pettymys, koska en saanut moduulista vielä sellaista kuin haluaisin, mutta sen tekeminen oli erittäin mielenkiintoista ja innostus laittaa ja korjata moduuli täysin toimivaksi kasvoi. Jatkan siis moduulin työstämistä vielä kurssin jälkeenkin, joten jos kiinnostuit moduulista niin seuraa sen etenemistä täältä GitHubista!
