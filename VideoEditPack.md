@@ -72,6 +72,43 @@ Aloitin Googletmalla, missä kyseisten sovellusten config -tiedostot olivat ja t
 * Kdenlive: ~/.config/kdenliverc : contains the general settings of the application
 * Blender: $HOME/.config/blender/2.79/
 
+Seurasin kurssilla tekemieni harjoitusten ja ohjeiden mukaisesti ja 
+laitoin jokaiseen init.sls tiedostoon file.managed periaatteen mukaisesti:
+
+    # Kdenlive
+    /home/olmo/.config/kdenliverc:
+      file.managed:
+        - source: salt://kdenlive/kdenliverc
     
+    # VLC
+    /home/olmo/.config/vlc/vlcrc:
+      file.managed:
+        - source: salt://vlc/vlcrc
+     
+
+Ajoin tilan testinä lokaalisti komennolla:
+    
+    sudo salt-call --local state.highstate 
+
+Ja sain jälleen onnistuneen tulosteen
+
+![image](https://user-images.githubusercontent.com/60943507/168885198-be687d86-2217-4bf7-8384-6ff12d9335d8.png)
+
+![image](https://user-images.githubusercontent.com/60943507/168885053-39b5e3a5-119e-4aa0-9222-6d45494de200.png)
+
+    
+Kaikki näytti vielä hyvältä ja kävin sovelluksissa katsomassa,että asetukset olivat tulleet voimaan.
+
+Tähän asti olin ajanut tilat lokaalisti ja kokeillut myös toiminnan vanhalla samalla koneella olevallani minionilla ja sekin toimi.
+Halusin kuitenkin tehdä moduulin testausta varten vielä täysin uuden erillisen virtuaalikoneen, joten asensin virtualboxilla itselleni uuden Debian 11
+virtuaalikoneen, josta tein uuden minionin asentamalla salt-minioin.
+Sain masterillani yhteyden tähän uuteen virtuaalikoneeseen ja minioniin nimeltä *ModuliMinion* ja lähdin suorittamaan isoa testiä...
+
+    sudo salt 'ModuliMinion' state.highstate
+    
+   
+   
   
+
+
 
