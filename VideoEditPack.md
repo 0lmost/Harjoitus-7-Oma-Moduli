@@ -82,12 +82,12 @@ Moduuli näyttää siis toimivan tässä vaiheessa, toki olin jo asentanut softa
 
 Seuraavana vaiheena olin laittanut tavoitteeksi vaihtaa sovelluksiin lempiasetukseni, joita käytän kun lähden työstämään videoprojektia.
 
-Asetukset olivat Kdenliveen: 
+**Asetukset olivat Kdenliveen:**
 
 * Projetkin aikajanan asetukset defaulttina: Resoluutio 1080p ja fps 23.98 (Samat kuin kamerani asetukset yleensä)
 * Valmiin työn export asetukset: Resoluutio 1080p ja fps 23.98 ja tiedostoformaatti mp4 (Asetukset lyhytelokuvilleni)
 
-Asetukset VLC:
+**Asetukset VLC:**
 
 * Skip no frames
 * Audio filter: Volume Normalizer
@@ -95,7 +95,7 @@ Asetukset VLC:
 Asetukset blender:
 
 
-Aloitin Googletmalla, missä kyseisten sovellusten config -tiedostot olivat ja tietojen mukaan ne olivat kansioissa:
+Aloitin Googlettamalla, missä kyseisten sovellusten config -tiedostot olivat ja tietojen mukaan ne olivat kansioissa:
 
 * VLC: ~/.config/vlc/vlcrc
 * Kdenlive: ~/.config/kdenliverc : contains the general settings of the application
@@ -106,7 +106,7 @@ Lähteet:
 * https://www.videolan.org/support/faq.html
 * https://community.kde.org/Kdenlive/Configuration
 
-Seurasin kurssilla tekemieni harjoitusten ja ohjeiden mukaisesti ja 
+Seurasin kurssin harjoitusten ja ohjeiden oppien mukaisesti tein ja 
 laitoin jokaiseen init.sls tiedostoon file.managed periaatteen mukaisesti:
 
     # Kdenlive
