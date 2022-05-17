@@ -3,10 +3,9 @@
 # VideoEditPack
 ![image](https://user-images.githubusercontent.com/60943507/168652154-854af248-07e2-4f1e-9176-a723c4498be2.png)
 
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)]([https://youtu.be/T-D1KVIuvjA](https://www.youtube.com/watch?v=rWjIpZxOqks&t=4s&ab_channel=Based%26Kino))
+[![Watch the video]([https://youtu.be/rWjIpZxOqks] 
 
-
-                    ![image](https://user-images.githubusercontent.com/60943507/168652555-17a99538-08c6-403e-914a-92b55b75d220.png)
+![image](https://user-images.githubusercontent.com/60943507/168652555-17a99538-08c6-403e-914a-92b55b75d220.png)
 
 
 
