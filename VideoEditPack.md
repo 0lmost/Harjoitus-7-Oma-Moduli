@@ -36,13 +36,14 @@ Moduuliin oli tarkoitus tulla mukaan myös DaVinci Resolve, mutta sillä ei ollu
 
 Aloitin luomalla masterille kansiot:
 
-    #komento sudo mkdir
+    #komento: sudo mkdir
     /srv/salt/blender
     /srv/salt/kdenlive
     /srv/salt/vlc
  
-Jokaiseen kansioon tein oman init.sls tiedoston, jonka perusrakenne on:
-
+Jokaiseen kansioon tein oman init.sls tiedoston (käyttäen tekstieditori microa), jonka perusrakenne on:
+    
+    # komento: micro init.sls
     vlc:
       pkg.installed
 
