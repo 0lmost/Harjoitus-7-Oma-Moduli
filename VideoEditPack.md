@@ -31,6 +31,22 @@ Jokaiseen kansioon tein oman init.sls tiedoston ,jonka perusrakenne on:
     ###  file.managed:
     ##    - source: salt://vlc/vlcrc
 
+Välissä tein testin ja laitoin kaikki luomani salt-moduulit yhteen top.sls tiedostoon, joka laitetaan kansiioon /srv/salt/
 
+    base:
+      '*':
+        - blender
+        - kdenlive
+        - vlc
+       
+Ajoin tilan testinä lokaalisti komennolla:
+    
+    sudo salt-call --local state.highstate
+    
+Sain onnistuneen tulosteen:
+
+
+
+    
   
 
