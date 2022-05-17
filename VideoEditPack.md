@@ -1,6 +1,7 @@
 **Olmo Kosunen GPL 2.0**
 
 **Alla oleva raportointi on suomeksi, mutta se käännetään myöhemmin myös englanniksi, jos moduli etenee "tuotantoon" asti**
+
 **English version of this report coming soon**
 
 # VideoEditPack - Beta state
