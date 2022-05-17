@@ -64,6 +64,13 @@ Asetukset vlc:
 
 Asetukset blender:
 
+
+Aloitin Googletmalla, missä kyseisten sovellusten config -tiedostot olivat ja tietojen mukaan ne olivat kansioissa:
+
+* VLC: $(HOME)/.config/vlc/vlcrc
+* Kdenlive: ~/.config/kdenliverc : contains the general settings of the application
+* Blender: $HOME/.config/blender/2.79/
+
     
   
 
