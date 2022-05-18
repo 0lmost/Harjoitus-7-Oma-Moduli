@@ -133,6 +133,13 @@ Ja sain jälleen onnistuneen tulosteen (kuvassa toisen ajon tuloste)
     
 Kaikki näytti vielä hyvältä ja kävin sovelluksissa katsomassa, että asetukset olivat tulleet voimaan.
 
+![image](https://user-images.githubusercontent.com/60943507/169050564-0dbee12b-1681-4c22-b6bc-07df88ef81c1.png)
+
+![image](https://user-images.githubusercontent.com/60943507/169050874-16a1fdcf-2554-4290-a7ee-7baa506e8dd1.png)
+
+![image](https://user-images.githubusercontent.com/60943507/169050905-b8e4fdf2-4b73-4107-b969-d2d1440df3d6.png)
+
+
 Tähän asti olin ajanut tilat lokaalisti ja kokeillut myös toiminnan vanhalla samalla koneella olevallani minionilla ja sekin toimi.
 
 Halusin kuitenkin tehdä moduulin testausta varten vielä täysin uuden erillisen virtuaalikoneen, joten asensin virtualboxilla itselleni uuden Debian 11
