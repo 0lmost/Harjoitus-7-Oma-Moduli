@@ -124,7 +124,7 @@ Ajoin tilan testinä lokaalisti komennolla:
     
     $ sudo salt-call --local state.highstate 
 
-Ja sain jälleen onnistuneen tulosteen
+Ja sain jälleen onnistuneen tulosteen (kuvassa toisen ajon tuloste)
 
 ![image](https://user-images.githubusercontent.com/60943507/168885198-be687d86-2217-4bf7-8384-6ff12d9335d8.png)
 
