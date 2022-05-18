@@ -47,16 +47,14 @@ Aloitin luomalla masterille kansiot:
     /srv/salt/kdenlive
     /srv/salt/vlc
  
-Jokaiseen kansioon tein oman init.sls tiedoston (käyttäen tekstieditori microa), jonka perusrakenne on:
+Jokaiseen kansioon kopioin löytämäni konffitiedoston ja tein oman pkg init.sls tiedoston (käyttäen tekstieditori microa), jonka perusrakenne vlc esimerkkinä on:
     
     # komento: $ micro init.sls
    
     vlc:
       pkg.installed
 
-    /home/olmo/.config/vlc/vlcrc:
-      file.managed:
-        - source: salt://vlc/vlcrc
+  
 
 Välissä tein testin ja laitoin kaikki luomani salt-tilat yhteen top.sls tiedostoon, joka laitetaan kansiioon /srv/salt/
 
@@ -76,7 +74,7 @@ Sain onnistuneen tulosteen:
 
 ![image](https://user-images.githubusercontent.com/60943507/168825371-4943525a-346e-443b-9d1b-80430d136f3c.png)
 
-Moduuli näyttää siis toimivan tässä vaiheessa, toki olin jo asentanut softat master-koneelleni aikaisemmin. Tila on kuitenkin todettu idempotentiksi.
+Moduuli näyttää siis toimivan tässä vaiheessa, toki olin jo asentanut softat master-koneelleni aikaisemmin ensimmäisellä testillä. Tila on kuitenkin todettu idempotentiksi toisen ajon ansioista.
 
 ## Sovellusten asetusten konfigurointi
 
@@ -106,7 +104,7 @@ Lähteet:
 * https://www.videolan.org/support/faq.html
 * https://community.kde.org/Kdenlive/Configuration
 
-Seurasin kurssin harjoitusten ja ohjeiden oppien mukaisesti tein ja 
+Seurasin kurssin harjoitusten ja ohjeiden oppien mukaisesti ja 
 laitoin jokaiseen init.sls tiedostoon file.managed periaatteen mukaisesti:
 
     # Kdenlive
@@ -200,7 +198,7 @@ Yritin etsiä oliko konffitiedostoja muissa sijanneissa ja yritin siirtää niit
 
 Mooduliprojekti oli osaltani pieni pettymys, koska en saanut moduulista vielä sellaista kuin haluaisin, mutta sen tekeminen oli erittäin mielenkiintoista ja innostus laittaa ja korjata moduuli täysin toimivaksi kasvoi. Jatkan siis moduulin työstämistä vielä kurssin jälkeenkin, joten jos kiinnostuit moduulista niin seuraa sen etenemistä täältä GitHubista!
 
-### Lähteet: 
+### Lähteet (Luettu 17.5.2022): 
 * https://docs.blender.org/manual/en/2.79/getting_started/installing/configuration/directories.html
 * https://www.videolan.org/support/faq.html
 * https://community.kde.org/Kdenlive/Configuration
