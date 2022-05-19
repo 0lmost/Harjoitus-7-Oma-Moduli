@@ -197,6 +197,8 @@ Yritin etsiä oliko konffitiedostoja muissa sijanneissa ja yritin siirtää niit
 
 -Siirsin konffitiedostot eri sijaintiin /etc/share ja muokkasin init.sls tiedostot ja sain onnistuneen tulosteen, mutta sovellukset eivät ilmeisesti saaneet otettua tietoja sieltä, koska halumiani muutoksia ei tullut.
 
+**Ratkaisu? update 19.5.2022** Laita tiedostot /etc/skel
+
 # Lopputulos ja projektin jatkaminen
 
 **VideoEditPack moduuli toimii pakettien asennusten osalta, joten se on projektin toimiva komponentti.**
