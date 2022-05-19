@@ -69,6 +69,8 @@ Välissä tein testin ja laitoin kaikki luomani salt-tilat yhteen top.sls tiedos
 Ajoin tilan testinä lokaalisti komennolla:
     
     $ sudo salt-call --local state.highstate
+    # Käytä jatkossa komentoa
+    $ sudo salt-call --local state.apply
     
 Sain onnistuneen tulosteen:
 
@@ -123,6 +125,8 @@ laitoin jokaiseen init.sls tiedostoon file.managed periaatteen mukaisesti:
 Ajoin tilan testinä lokaalisti komennolla:
     
     $ sudo salt-call --local state.highstate 
+    # Käytä jatkossa komentoa
+    $ sudo salt-call --local state.apply
 
 Ja sain jälleen onnistuneen tulosteen (kuvassa toisen ajon tuloste)
 
@@ -170,6 +174,8 @@ virtuaalikoneen, josta tein uuden minionin asentamalla salt-minioin näitten ohj
 Sain masterillani yhteyden tähän uuteen virtuaalikoneeseen ja minioniin nimeltä *ModuliMinion* ja lähdin suorittamaan isoa testiä...
 
     $ sudo salt 'ModuliMinion' state.highstate
+    # Käytä jatkossa komentoa
+    $ sudo salt 'Minion' state.apply
     
  Sain tulosteen:
  
