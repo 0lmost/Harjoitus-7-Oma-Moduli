@@ -205,7 +205,7 @@ Yritin etsiä oliko konffitiedostoja muissa sijanneissa ja yritin siirtää niit
 
 **Sovellusten asetusten konfigurointi ei toimi vielä...**
 
-Mooduliprojekti oli osaltani pieni pettymys, koska en saanut moduulista vielä sellaista kuin haluaisin, mutta sen tekeminen oli erittäin mielenkiintoista ja innostus laittaa ja korjata moduuli täysin toimivaksi kasvoi. Jatkan siis moduulin työstämistä vielä kurssin jälkeenkin, joten jos kiinnostuit moduulista niin seuraa sen etenemistä täältä GitHubista!
+Mooduliprojekti oli osaltani pieni pettymys, koska en saanut moduulista vielä sellaista kuin haluaisin, mutta sen tekeminen oli erittäin mielenkiintoista ja innostus laittaa ja korjata moduuli täysin toimivaksi kasvoi. Jatkan siis moduulin työstämistä vielä kurssin jälkeenkin, joten jos kiinnostuit moduulista niin seuraa sen etenemistä täältä GitHubista! Ideana laittaa paketti myös Windowsille toimivaksi ja listätä puuttuvat ohjelmat mukaan.
 
 ### Lähteet (Luettu 17.5.2022): 
 * https://docs.blender.org/manual/en/2.79/getting_started/installing/configuration/directories.html
