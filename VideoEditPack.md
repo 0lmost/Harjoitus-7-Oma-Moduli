@@ -6,7 +6,7 @@
 
 **Tästä GitHub reposta löytyy kaikki tiedostot joita moduuli käyttää**
 
-# VideoEditPack - Beta state v.1.0
+# VideoEditPack(Salt-module) - Beta state v.1.0 - Using SaltStack -
 
 ![image](https://user-images.githubusercontent.com/60943507/168652154-854af248-07e2-4f1e-9176-a723c4498be2.png)
 
